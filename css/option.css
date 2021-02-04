@@ -1,0 +1,248 @@
+
+
+/*******サンプルサイトのCSS抜粋*************************/
+
+.popular{
+	margin-top:500px;
+	padding: 100px auto;
+}/*オリジナル後から追加*/
+
+
+
+
+.content-width, .header__inner, .travel, .houses, .popular__header, .popular__container, .footer {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.font-lg, .main-title {
+  font-size: 25px;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+
+@media (min-width: 960px) {
+.font-lg, .main-title {
+    font-size: 36px;
+	}}
+
+.side .tween-animate-title {
+  color: black;
+  text-decoration: none !important;
+  margin: 0 40px;
+  vertical-align: middle;
+  letter-spacing: 2px;
+}
+
+/*.animate-title,
+.tween-animate-title {
+  opacity: 0;
+}
+*/
+.animate-title.inview,
+.tween-animate-title.inview {
+  opacity: 1;
+}
+
+.animate-title.inview .char,
+.tween-animate-title.inview .char {
+  display: inline-block;
+}
+
+/*.animate-title .char,
+.tween-animate-title .char {
+  opacity: 0;
+}*/
+
+.popular__inner {
+  position: relative;
+}
+
+.popular__inner::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: #eaebe6;
+}
+
+.pb-sm, .travel__texts, .popular__container {
+  padding-bottom: 16px !important;
+}
+
+.flex, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.popular__container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 600px) {
+	.flex, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+	
+.popular__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+.popular__item {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+}
+
+@media (min-width: 960px) {
+	.popular__item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+	.popular__img {
+    height: 335px;
+  }
+	.font-md, .popular__title {
+    font-size: 19px;
+  }
+	}
+@media (min-width: 1280px) {
+	.popular__item {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+.mb-lg, .travel, .houses, .popular__btn {
+    margin-bottom: 150px !important;
+  }
+	}
+
+.popular__img {
+  height: 150px;
+/*  overflow: hidden;*/
+  margin-bottom: 5px;
+}
+.font-md, .popular__title {
+  font-size: 17px;
+}
+.mb-sm, .travel__sub, .travel__img, .houses__title, .popular__title {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg, .travel, .houses, .popular__btn {
+  margin-bottom: 80px !important;
+}
+
+.popular__btn {
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+
+
+
+
+/*.appear.up .item {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.appear.down .item {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.appear.left .item {
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.appear.right .item {
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.appear .item {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.appear.inview .item {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.appear.inview .item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.appear.inview .item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.appear.inview .item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.appear.inview .item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.appear.inview .item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.appear.inview .item:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.appear.inview .item:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.appear.inview .item:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.appear.inview .item:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.appear.inview .item:nth-child(10) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+
+
+*/
