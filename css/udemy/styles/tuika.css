@@ -398,6 +398,65 @@ a:visited {
 }
 
 
+
+
+/*------------------ ボックス スマホ------------------------*/
+@media only screen and (max-width: 747px){
+.m-index .index_works .works_list {
+    margin-bottom: 0;
+}
+.works_list {
+    margin: 0;
+}
+
+.works_box:nth-child(odd) {
+    border-right: 1px solid #ddd;
+}	
+.works_box {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    min-height: 200px;
+}
+	
+.l-main {
+    line-height: 2;
+}
+.works_box a::before {
+    background: none;
+}
+	
+.works_box a .works_name {
+    position: relative;
+    color: #fff;
+    text-align: left;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "AxisStd-Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, Verdana, sans-serif;
+    margin-bottom: 0;
+    margin-top: 10px;
+    min-height: 65px;
+}
+	
+.works_box .text {
+    margin: 0;
+}	
+.hidden-xs {
+    display: none !important;
+}	
+.works_box.box_small {
+    width: 50%;
+}
+
+}
+
+
+
 /*------------------ ボックスここまで-
 ---------------------------------------------------------------------*/
 
