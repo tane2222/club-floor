@@ -7,10 +7,8 @@ body {
   *font: x-small;
   background: #fff;*/
   color: #555;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, Verdana, sans-serif
+  /*font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, Verdana, sans-serif*/
 }
-
-
 
 /*---------------------------------------------------------
 　　　　　丸点たち
@@ -375,6 +373,28 @@ ol li, ul li {
   float: right;
   width: 596px;
 }
+
+@media (max-width: 1304px){
+.top-hero-canvas{
+  margin-right: -45px;
+  float:none;
+  
+}
+.top-hero-canvas canvas{	
+	max-width: 300px !important;	
+	}
+	
+	
+.top-hero-intro {
+  padding-top: 103px;
+  float: none;
+  width: 320px;
+  position: relative;
+  z-index: 20;/*後から追加*/
+}
+	
+}
+
 
 /*---------------------------------------------------------
 　　　　　pr-conここまで

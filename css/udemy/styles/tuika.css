@@ -116,6 +116,13 @@
 	padding: 0 auto;
 }
 
+@media screen and (max-width: 747px){
+	.my-title {
+	padding: 0 20px;
+	width:300px;
+}		
+}
+
 .abc {
 	padding: auto;
 }
@@ -285,7 +292,6 @@
 
 .sub-text {
 	width: 80%!important;
-	
 }
 
 /*------------------ ボックス-
@@ -325,7 +331,7 @@
     background: #fff;
     position: relative;
     width: 48%;
-	border-radius: 20px 20px 20px 70px;
+	border-radius: 20px 20px 20px 20px;
     margin: 0 1% 30px;
 	/*↓後から追加*/
 	padding: 0.5em 1em;

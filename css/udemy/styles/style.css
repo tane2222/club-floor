@@ -536,7 +536,8 @@ img {
 }
 
 .font-md, .popular__title {
-  font-size: 17px; }
+  font-size: 17px; 
+  color: #e46e24;}
 
 .font-lr, .houses__title {
   font-size: 17px; }
@@ -568,7 +569,8 @@ color:#594426;/*後から追加*/}
 .main-title {
   font-weight: 600;
   margin-bottom: 0;
-  display: block; }
+  display: block; 
+ }
 
 .sub-title {
   color: #e46e24;/*元は#535353*/
@@ -695,7 +697,9 @@ background: url(../../../img/character_stripe.jpg);}
   text-align: center;
   flex-basis: 100%; }
 .popular__img {
-  height: 150px;
+  height: 200px;
+  width: 200px;/*後から追加*/
+  margin: auto 60px;/*後から追加*/
   overflow: hidden;
   margin-bottom: 5px; }
   .popular__img > img {
@@ -833,7 +837,8 @@ background: url(../../../img/character_stripe.jpg);}
     font-size: 23px; }
 
   .font-lg, .main-title {
-    font-size: 45px; /*元は36px*/}
+    font-size: 45px; /*元は36px*/
+	color:#594426}
 
   .mb-lg, .travel, .houses, .popular__btn {
     margin-bottom: 35px !important; /*元は150px*/}
@@ -847,6 +852,7 @@ background: url(../../../img/character_stripe.jpg);}
     height:335px;/*335px*/
 	width: 335px; /*後から追加*/
 	  position: relative;/*後から追加*/
+	 margin:inherit;/*後から追加*/
 	}
 
   .travel__img {
