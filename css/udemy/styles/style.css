@@ -425,6 +425,7 @@
     padding: 0 40px;
     font-size: 38px; }
   .mobile-menu__btn {
+	display:none;/*後から追加*/
     background-color: unset;
     border: none;
     outline: none !important;
@@ -591,6 +592,10 @@ main {
   position: relative;
   z-index: -1; 
  padding-bottom: 100px;/*後から追加*/}
+
+@media screen and (max-width: 768px){
+	main{padding-bottom: 0px;/*後から追加*/}
+}
 
 #container {
   background-color: white;

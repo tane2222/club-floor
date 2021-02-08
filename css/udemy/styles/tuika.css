@@ -145,6 +145,14 @@
 /*------------------flow css--
 ---------------------------------------------------------------------*/
 
+.c-box07{
+	display: table;
+    width: 100%;
+    height: 642px;/*642px*/
+    background: url(../../../img/machiai-2.jpg) no-repeat center center!important;
+    background-size: cover;
+    color: #fff;
+}
 
 @media screen and (min-width: 769px){
 /*.home*/ .c-box07 {
@@ -287,12 +295,97 @@
     right: 20px;
 }
 		}
+
+@media screen and (max-width: 768px){
+.home .c-box07 {
+    position: relative;
+    padding: 30px 20px;
+    background: url(../../../img/machiai-2.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}}
+@media screen and (max-width: 768px){
+.home .eng-title span:nth-of-type(1) {
+    display: inline-block;
+    padding: 0 5px 7px 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}}
+@media screen and (max-width: 768px){
+.home .eng-title span:nth-of-type(2) {
+    display: block;
+    margin-top: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}}
+
+@media screen and (max-width: 768px){
+.home .c-box07 .description {
+    margin-top: 15px;
+}}
+@media screen and (max-width: 768px){
+.pc {
+    display: none !important;
+}}
+@media screen and (max-width: 768px){
+.home .c-box07 .flow-list {
+    margin-top: 45px;
+}
+
+.home .c-box07 .flow-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 0 20px;
+}
+	.home .c-box07 .flow-list ul li:nth-of-type(1){
+		margin-top: 0;
+	}
+.home .c-box07 .flow-list ul li:nth-of-type(1) {
+    margin-left: 0;
+
+}
+	
+.home .c-box07 .flow-list ul li {
+    position: relative;
+    width: 20%;
+    margin-left: 6.66%;
+    margin-top: 10px;
+    background-color: #0081cc;
+    font-weight: bold;
+}
+	
+	
+	
+	
+}
+
 /*------------------flow cssここまで--
 ---------------------------------------------------------------------*/
 
 .sub-text {
 	width: 80%!important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------ ボックス-
 ---------------------------------------------------------------------*/
@@ -424,7 +517,7 @@ a:visited {
     border-top: none;
     width: 50%;
     margin: 0;
-    padding: 20px;
+    padding: 8px;
     min-height: 200px;
 }
 	

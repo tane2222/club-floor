@@ -145,7 +145,7 @@ ol li, ul li {
 }
 @media screen and (max-width:768px) {
   .keyvisual {
-    margin: 73px 0 40px;
+    margin: 10px 0 10px;
     padding: 0 10px
   }
 }
@@ -186,17 +186,18 @@ ol li, ul li {
   left: 60px;
   max-width: 556px;
   width: 49%;
-  z-index: 5;
+  z-index: 10000000;/*もとは５*/
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(0);
-  transform: translateY(0)
+  transform: translateY(0);
 }
 @media screen and (max-width:768px) {
   .keyvisual-copy {
     width: 90%;
     left: 15px;
-    bottom: 20px
+    bottom: 20px;
+	z-index: 10000000;
   }
 }
 .keyvisual-copy img {
@@ -246,18 +247,32 @@ ol li, ul li {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  max-width: 1366px;
+  max-width: 1600px;/*1366px*/
   width: 100%;
   margin: auto;
   padding: 0 36px
 }
+
+.container-x {
+  z-index: 10;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 1366px;/*1366px*/
+  width: 100%;
+  margin: auto;
+  padding: 0 36px
+}
+
 @media screen and (max-width:1440px) {
-  .container {
+  .container,.container-x  {
     padding: 0 50px
   }
 }
 @media screen and (max-width:768px) {
-  .container {
+  .container,.container-x  {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -309,13 +324,18 @@ ol li, ul li {
 　　　　　pr-con
 ---------------------------------------------------------*/
 
+.explain{
+	width: 100%;
+	padding: 0 auto;
+}
+
 .l-container {
   padding-top: 65px;
 }
 
 /*-----------後から追加 ---------------------*/
 
-@media (min-width: 600px){
+@media (min-width: 900px){
 #l-container{
 	position: relative;/*後から追加*/
     background: url("../img/bg_4.png") 
@@ -323,8 +343,10 @@ ol li, ul li {
     max-width: 1920px;
 	padding-bottom: 84px;
 	z-index: 10;
+	
 }
 }
+
 
 	
 /*-----------後から追加ここまで ---------------------*/
@@ -338,7 +360,6 @@ ol li, ul li {
   position: fixed;
   top: 0;
   z-index: 999999;
-  background: url("../img/common/bg-flag-top.png") repeat-x 0 0;
 }
 	
 .l-content {
@@ -369,29 +390,36 @@ ol li, ul li {
 
 .top-hero-canvas {
   margin-right: -45px;
-
   float: right;
   width: 596px;
 }
 
 @media (max-width: 1304px){
-.top-hero-canvas{
-  margin-right: -45px;
-  float:none;
-  
+
+	
+.l-content {
+	width:100%!important;
+	padding-right: 30px!important;
+	padding-left: 30px!important;
 }
+.top-hero{
+	}
+	
+.top-hero-canvas{
+  float:none; 
+}
+	
 .top-hero-canvas canvas{	
-	max-width: 300px !important;	
+	max-width: 300px !important;
+	
 	}
 	
 	
 .top-hero-intro {
-  padding-top: 103px;
-  float: none;
-  width: 320px;
-  position: relative;
-  z-index: 20;/*後から追加*/
+  float:none;
+  padding: inherit;
 }
+
 	
 }
 
