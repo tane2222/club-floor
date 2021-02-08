@@ -145,15 +145,6 @@
 /*------------------flow css--
 ---------------------------------------------------------------------*/
 
-.c-box07{
-	display: table;
-    width: 100%;
-    height: 642px;/*642px*/
-    background: url(../../../img/machiai-2.jpg) no-repeat center center!important;
-    background-size: cover;
-    color: #fff;
-}
-
 @media screen and (min-width: 769px){
 /*.home*/ .c-box07 {
     display: table;
@@ -199,13 +190,12 @@
 }
 
 /*.home */.c-box07 .flow-list ul {
-    /*display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;*/
-    display: -webkit-flex;
+    align-items: center;
     -webkit-justify-content: center;
     -webkit-align-items: center;
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
     -webkit-flex-wrap: nowrap;
     padding: 0 20px;
 }
@@ -221,9 +211,10 @@
 /*.home*/ .c-box07 .flow-list ul li {
     position: relative;
     max-width: 130px;
-    width: 11%;
-    /*margin-left: 3.78%;
-    border-radius: 130px;*/
+    width: 11%;/*元は11%*/
+	height:11%;/*後から追加*/
+    margin-left: 3.78%;
+    border-radius: 130px;
     background-color: #F9A443;
 }
 /*.home*/ .c-box07 .flow-list ul li::before {
@@ -234,13 +225,13 @@
     width: 12px;
     height: 24px;
     margin-top: -12px;
-    background: url(../images/arrow_right_white02.png) no-repeat;
+    background: url(../../../img/arrow_right_white02.png) no-repeat;
 }
 	
 /*.home*/ .c-box07 .flow-list ul li span {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 0;/*もとは0*/
     width: 100%;
     text-align: center;
     font-size: 21px;/*元は2.1rem*/
@@ -270,7 +261,7 @@
 }
 	
 .btn.bw a::before {
-    background: url(../images/arrow_right_white.png) no-repeat;}
+    background: url(../../../img/arrow_right_white.png) no-repeat;}
 	
 .btn a::before {
     content: '';
@@ -296,75 +287,117 @@
 }
 		}
 
+
+
+@media screen and (max-width: 1200px){
+	
+	 .c-box07 .flow-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 20 20px;
+}
+	
+	/*.home */.c-box07 .flow-list ul li {
+    position: relative;
+    
+    margin-left: 6.66%;
+    margin-top: 10px;
+    background-color: #F9A443;
+    font-weight: bold;
+	height: 66px!important;
+	width: 66px!important;
+	border-radius: 66px;
+	}
+	.c-box07 .flow-list ul li span{
+        margin-top: 0 !imortant;
+		font-size:14px;
+}
+	
+	
+}
+
+
 @media screen and (max-width: 768px){
-.home .c-box07 {
+/*.home */.c-box07 {
     position: relative;
     padding: 30px 20px;
     background: url(../../../img/machiai-2.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
     color: #fff;
-}}
-@media screen and (max-width: 768px){
-.home .eng-title span:nth-of-type(1) {
+}
+
+/*.home*/ .eng-title span:nth-of-type(1) {
     display: inline-block;
     padding: 0 5px 7px 5px;
-    font-size: 1.4rem;
+    font-size: 14px;/*もとは1.4rem*/
     font-weight: bold;
     border-bottom: 2px solid #fff;
-}}
-@media screen and (max-width: 768px){
-.home .eng-title span:nth-of-type(2) {
+}
+/*.home*/ .eng-title span:nth-of-type(2) {
     display: block;
     margin-top: 10px;
-    font-size: 2.4rem;
+    font-size: 24px;/*元は2.4rem*/
     font-weight: bold;
-}}
+}
 
-@media screen and (max-width: 768px){
-.home .c-box07 .description {
+/*.home*/ .c-box07 .description {
     margin-top: 15px;
-}}
-@media screen and (max-width: 768px){
+}
+
 .pc {
     display: none !important;
-}}
-@media screen and (max-width: 768px){
-.home .c-box07 .flow-list {
+}
+
+/*.home*/ .c-box07 .flow-list {
     margin-top: 45px;
 }
 
-.home .c-box07 .flow-list ul {
+/*.home*/ .c-box07 .flow-list ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     padding: 0 20px;
 }
-	.home .c-box07 .flow-list ul li:nth-of-type(1){
+	
+	/*.home*/ .c-box07 .flow-list ul li:nth-of-type(1){
 		margin-top: 0;
 	}
-.home .c-box07 .flow-list ul li:nth-of-type(1) {
+/*.home*/ .c-box07 .flow-list ul li:nth-of-type(1) {
     margin-left: 0;
 
 }
 	
-.home .c-box07 .flow-list ul li {
+/*.home */.c-box07 .flow-list ul li {
     position: relative;
-    width: 20%;
+    width:60px!important;/*元は20%*/
     margin-left: 6.66%;
     margin-top: 10px;
-    background-color: #0081cc;
+    background-color: #F9A443;
     font-weight: bold;
+	height: 60px!important;
+	border-radius: 60px!important;
+	
+}
+
+ .c-box07 .flow-list ul li::before {
+    background: url(../../../img/arrow_right_white02.png) no-repeat;
+	z-index: 10;
 }
 	
 	
-	
-	
+	.c-box07 .flow-list ul li span{
+		font-size:12px;
+	}
 }
 
 /*------------------flow cssここまで--
