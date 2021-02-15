@@ -619,7 +619,7 @@ p.nominalBounds = new cjs.Rectangle(308,308,576,576);
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
 
-(function($, undefined) {
+(function($) {// ($, undefined)
   $(function() {
     var canvas, stage, exportRoot;
     function init() {
@@ -649,33 +649,4 @@ var lib, images, createjs;
     init();
   });
 })(jQuery);
-
-/* ------------------------------------------*/
-// YouTube のモーダル表示
-/* ------------------------------------------*/
-// Magnific Popup (http://dimsemenov.com/plugins/magnific-popup/) を使用
-$(document).ready(function() {
-  $('[data-popup-youtube]').magnificPopup({
-    disableOn       : 700,
-    type            : 'iframe',
-    mainClass       : 'mfp-video',
-    removalDelay    : 160,
-    preloader       : false,
-    fixedContentPos : false,
-    closeOnBgClick  : true
-  });
-});
-
-/* ------------------------------------------*/
-// YouTube のモーダル表示
-/* ------------------------------------------*/
-// Slick (http://kenwheeler.github.io/slick/) を使用
-$(document).ready(function() {
-  $('.js-slick').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    dots: true,
-    arrows: false
-  });
-});
 

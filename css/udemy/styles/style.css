@@ -407,14 +407,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%; }
+  width: 100%;}
 
 .img-bg50 {
   position: relative; }
   .img-bg50::before {
     display: block;
     content: '';
-    padding-top: 50%; }
+    padding-top: 50%;/*50%*/ }
 
 .mobile-menu {
   position: fixed;
